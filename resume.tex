@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\usepackage[scale=0.85]{geometry}
+\usepackage{color}
+
+\name{James}{Danylik}
+\title{Software Engineer}
+\address{11669 Rochester Avenue, \#303}{Los Angeles, California}{90025-2383}
+\phone[fixed]{+1~(310)~844~6339}
+\email{james.danylik@gmail.com}                               
+\homepage{jamesdanylik.com}
+\social[linkedin]{jamesdanylik}
+\social[github]{jamesdanylik}
+
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+\input{letter-spacex}
+\clearpage
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{(Expected) December 2015}{Computer Science}{University of California}{Los Angeles}{\textit{BS}}{Concentration in Electrical Engineering.}
+
+\section{Experience}
+\subsection{Employment}
+\cventry{2009--Present}{Digital Content Administrator}{UCLA Athletics}{Los Angeles}{}{
+\begin{itemize}
+\item \footnotesize \textbf{CFIFTY Atrium System} \color{gray} \textit{@ J.D. Morgan Center} \color{black} \color{gray} \texttt{(Python/HTML/CSS/JS)} \color{black}
+  \footnotesize{ \begin{itemize} 
+  \item Designed \& wrote automated web scraping backend \texttt{(Python)} for all major social media networks.
+   \item Created animated frontend \texttt{(HTML/CSS/JS)}; seamless updates via AJAX \& remote management via \textit{socket.io}.
+  \item Managed physical installation and component acquisition.
+  \item Saved the company 75\% cost (as compared to outside company quotes by Array Interactive).
+  \end{itemize}}
+\item \textbf{Touchscreen Kiosk System} \color{gray} \textit{@ UCLA Hall of Fame} \color{black} \color{gray} \texttt{(Python/Bash/PHP/CSS)} \color{black}
+  \begin{itemize}
+  \item Maintained museum kiosk system \texttt{(PHP/CSS)} with 3 distinct installations.
+  \item Automated deployment via script \texttt{(Bash)}; copies database and media updates into production over wireless network.
+  \item Improved database schema \& created automatic migration toolkit \texttt{(Python)} for old data using \textit{MySQLConnector}. 
+  \item Assisted with hiring, delegation of tasks, \& management of new Kiosk Managers.
+  \end{itemize}
+\item \textbf{Bruin Spirit Theater} \color{gray} \textit{@ UCLA Hall of Fame} \color{black} \color{gray} \texttt{(BrightScript)} \color{black}
+  \begin{itemize}
+  \item Maintained pre-existing DVD player-based system over legacy \texttt{RS232} interface.
+  \item Implemented replacement Brightsign-based system; features touchscreen, variable lineups, \& additional controls.
+  \end{itemize}
+\item \textbf{Wooden Way} \color{gray} \textit{@ Pauley Pavilion} \color{black} \color{gray} \texttt{(BrightScript)} \color{black}
+  \begin{itemize}
+  \item Created technical backend for new exhibits added in 2012 renovation.
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2013--2014}{Independent Contractor}{UCLA Alumni}{Los Angeles}{}{
+\footnotesize{\begin{itemize} 
+\item \textbf{CFIFTY Alumni System} \color{gray} \textit{@ James West Alumni Center} \color{black} \color{gray} \texttt{(Python/HTML/CSS/JS)} \color{black}
+\begin{itemize}
+  \item Success of \textbf{CFIFTY Atrium System} led to purchase of second system from external department.
+  \item Created new frontend \texttt{(HTML/CSS/JS)} and settings object, successfully reusing backend from previous project.
+  \end{itemize}
+\end{itemize}}}
+
+\cventry{2008--2009}{Kiosk Manager}{UCLA Athletics}{Los Angeles}{}{
+\footnotesize{\begin{itemize}
+\item Responsible for adding new entries to the Kiosk system's MySQL database.
+\item Assisted with the release of v1, manual-entry Current Events system.
+\end{itemize}}}
+
+\subsection{Featured Projects}
+\begin{cvcolumns}
+  \cvcolumn{SaltyBot \color{gray} \texttt{(Python)} \color{black}}{\footnotesize{A cross-platform tkinter-based client for \texttt{SaltyBet.com}; includes basic IRC client, twitch.tv playback via \textit{livestreamer} + \textit{gstreamer}, and reverse-engineered implementations of site's primary functions.}}
+  \cvcolumn{LightControl \color{gray} \texttt{(C)} \color{black}}{\footnotesize{A prototype Arduino-based system for control of \texttt{WS2812B} LED strips; expands on \textit{FastLED} library to support overlay of effects, virtual regions, and remote control over serial connection.}}
+
+  \cvcolumn[0.5]{Home Automation Prototype \color{gray} \texttt{(C/Python/Java)} \color{black}}{\footnotesize{A prototype home automation system; consists of a RaspberryPi control server \texttt{(Python)} with WiFi, Bluetooth, \& ZigBee radios, a prototype remote Arduino \texttt{(C)} with a ZigBee radio, and a co-designed Android application \texttt{(Java)}. Both devices support attached relays and servos, allowing control of automation tasks: over the internet through dynamic DNS and the control server's WiFi connection; from the surrounding region over low-power ZigBee wireless radio; or, from the same room using Wiimote control over Bluetooth.}}
+\end{cvcolumns}
+
+\section{Skills}
+\begin{cvcolumns}
+  \cvcolumn{Libraries}{\footnotesize{\begin{itemize}
+  \item Android \faAndroid \item MySQL \item Tkinter \item Node.js \item socket.io \item Unity 
+  \end{itemize}}}
+  \cvcolumn{Markup}{\footnotesize{\begin{itemize}
+  \item Markdown  \item \LaTeX \item \texttt{HTML}\faHtml5 \item \texttt{CSS}\faCss3 
+  \end{itemize}}}
+  \cvcolumn{Languages}{\footnotesize{\begin{itemize}\item C/C\texttt{++}/C\texttt{\#} \item Java \item \texttt{R} \item OCaml \end{itemize}}}
+  \cvcolumn{Scripting}{\footnotesize{\begin{itemize} \item Python \item Bash/Sh \item Lua \item JavaScript \item \texttt{PHP} \item BrightScript \end{itemize}}}
+  \cvcolumn[0.525]{General / Miscellaneous}{\footnotesize{\begin{itemize}\item Administration of Linux, OSX, \& Windows systems. \faLinux ~ \faApple ~ \faWindows \item Basic video, image, and audio manipulation using FOSS tools. \item Dynamic documentation creation using \LaTeX. \hfill \\(ex. this resume; source available on github.) \item Virtualiztion; daily user of \texttt{QEMU KVM} w/ \texttt{Intel VT-d} for 3 years.\end{itemize}}}
+\end{cvcolumns}
+
+\end{document}
